@@ -16,10 +16,8 @@ $(window).on("load", () => {
         url = "https://api-mrconstrucoesapp.herokuapp.com/imagens/grande";        
     }
 
-
     $.ajax({ url: url , success: (resposta)=> {
         let lista  = resposta;
-
-        
+        console.log(lista);
     }});        
 });

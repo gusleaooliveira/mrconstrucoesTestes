@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+cp vendors/node_modules/jquery/dist/jquery.min.js resources/js/jquery.min.js
 git init
 git remote add origin git@github.com:gusleaooliveira/mrconstrucoesTestes.git
 git add .
