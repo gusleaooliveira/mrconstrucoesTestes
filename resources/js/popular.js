@@ -16,11 +16,10 @@ $(window).on("load", () => {
         url = "https://api-mrconstrucoesapp.herokuapp.com/imagens/grande";        
     }
 
-    $.ajax({ 
+    $.get({ 
         url: url, 
         type: "GET",
         async: true,
-        crossDomain: true, 
         success: (resposta)=> {
         let lista  = resposta;
         console.log(lista);
