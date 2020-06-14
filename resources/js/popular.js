@@ -18,8 +18,13 @@ $(window).on("load", () => {
 
     $.get({ 
         url: url, 
-        type: "GET",
         async: true,
+        cache: true,
+        crossDomain: true,
+        headers: {
+            "accept": "application/json",
+            "Access-Control-Allow-Origin":"*"
+        },
         success: (resposta)=> {
         let lista  = resposta;
         console.log(lista);
